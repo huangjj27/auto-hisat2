@@ -4,7 +4,7 @@
 # unify the files as follow:
 # current_dir
 #   |-- data
-#         |-- genome.fna    # the genome file
+#         |-- genome.fna.gz    # the genome file
 #         |-- samples       # all the RNA samples, sperated into directories
 #               |-- one_of_your_sample
 #                     |-- R1.fastq.gz
@@ -29,7 +29,7 @@ if [ -z ${GENOME} ]; then
     exit 1
 fi
 
-fna="${data_dir}/${GENOME}.fna"
+fna="${data_dir}/${GENOME}.fna.gz"
 echo "using genome file ${fna}"
 
 rm -rf results

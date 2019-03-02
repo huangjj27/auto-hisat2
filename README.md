@@ -1,11 +1,11 @@
-a shell script automazing hisat2-build, hisat2-align-s, picard & cufflinks
+a shell script automazing the flow of hisat2-build, hisat2-align-s, picard & cufflinks
 
 ## Usage
 1. unify the files as follow:
 ```
 current_dir
   |-- data
-        |-- genome.fna    # the genome file
+        |-- genome.fna.gz    # the genome file
         |-- samples       # all the RNA samples, sperated into directories
               |-- one_of_your_sample
                     |-- R1.fastq.gz
